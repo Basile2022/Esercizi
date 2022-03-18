@@ -1,0 +1,19 @@
+/*Set Custom proprieties*/
+:root {
+    --bg-color: #aae6e6d3;
+    --size: 100px;
+    --ball-color: #4a38ee;
+
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.ball {
+    width: var(--size);
+    height: var(--size);
+    border-radius: calc(var(--size) / 2);
+    /*Oltre alla variabile --ball-color, aggiungo un valore di default*/
+    background-color: var(--ball-color, orange);
+}

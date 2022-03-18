@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>Lezione HTML</title>
+		<style>
+			label {
+				display: block
+			}
+		</style>
+	</head>
+
+	<body>
+		<form action="#" method="get">
+			<label for="usermail">Email</label>
+			<input type="Email" id="usermail" name="Email"><br><br>
+			<label for="pwd">Password</label>
+			<input type="password" id="pwd" name="password"><br><br>
+			<label for="fname">Nome:</label>
+			<input type="text" id="fname" name="fname"><br><br>
+			<label for="lname">Cognome:</label>
+			<input type="text" id="lname" name="lname"><br><br>
+			<label for="birth">Data di nascita:</label>
+			<input type="date" id="birth" name="birth"><br><br>
+			<label for="phone">Numero di telefono:</label>
+			<input type="tel" id="phone" name="phone"><br><br>
+			<label for="phone">Numero di telefono:</label>
+			<input type="tel" id="phone" name="phone"><br><br>
+			<select name="plan" id="plan"> 
+				<option value="gratis">Piano free</option>
+				<optgroup label="Piani tariffari">
+					<option value="p1">Piano base</option>
+					<option value="p2">Piano pro</option>
+					<option value="p3">Piano total</option>
+				</optgroup>
+			</select>
+			<label for="pro">
+			<input type="checkbox" id="pro" name="pro" value="Fatto">
+		</label>
+		<br>
+		<legend>Estremi carta di credito</legend>
+					<label for="card">
+						<span>Numero Carta: </span>
+						<input type="tel" id="card" name="card" maxlength="16" placeholder="3260 9467 8891 5523" required>
+					</label>
+					<label for="cvc">
+						<span>CVC: </span>
+						<input type="password" id="cvc" name="cvc" maxlength="3" required>
+					</label> 
+
+					<label for="exprd">
+						<span>Mese: </span>
+						<input type="list" name="exprd" id="exprd_month" list="month" required>
+						<datalist id="month">
+							<option value="01"></option>
+							<option value="02"></option>
+							<option value="03"></option>
+							<option value="04"></option>
+							<option value="05"></option>
+							<option value="06"></option>
+							<option value="07"></option>
+							<option value="08"></option>
+							<option value="09"></option>
+							<option value="10"></option>
+							<option value="11"></option>
+							<option value="12"></option>
+						</datalist>
+					</datalist>
+					<span>Anno: </span>
+					<input type="list" name="exprd" id="exprd-year" list="year" required>
+					<datalist id="year">
+						<option value="2022"></option>
+						<option value="2023"></option>
+						<option value="2024"></option>
+						<option value="2025"></option>
+					</datalist>
+				</label>
+				<label for="billing address">
+					<span>Indirizzo fatturazione:</span>
+					<input type="text" id="billing address" name="billing address">
+				</label>
+			</section>
+			<section>
+			<button type="submit">Registrazione anagrafe</button>
+			</section>
+		</form>
+	</body>
+
+</html>
